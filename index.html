@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHARGE</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h2>deliveryCharge</h2>
+      <p class="question">An online store calculates delivery charges based on the customer's order amount and delivery distance. Write a JavaScript function called deliveryCharge(amount, distance) that returns the delivery fee according to these rules:If the order amount is ₦50,000 or more, delivery is free regardless of distance.Otherwise, if the distance is 5 km or less, the delivery fee is ₦1,500.Otherwise, if the distance is greater than 5 km but less than or equal to 15 km, the delivery fee is ₦3,000.Otherwise, the delivery fee is ₦5,000.</p>
+      <p>Function signature</p>
+      <p>Test cases</p>
+      <p>Function call Expected result</p>
+      <ul>
+      <li>deliveryCharge(60000, 20) 0</li>
+      <li>deliveryCharge(30000, 5) 1500</li>
+      <li>deliveryCharge(60000, 20) 0</li>
+      <li>deliveryCharge(30000, 5) 1500</li>
+      <li>deliveryCharge(20000, 10) 3000</li>
+      <li>deliveryCharge(15000, 16) 5000</li>
+      <li>deliveryCharge(50000, 3) 0</li>
+      <li>deliveryCharge(30000, 15) 3000
+      </ul>
+
+      <p>
+        <label>amount</label>
+        <input type = "number" placeholder="first number" class="firstNumber" id="firstNumber">
+      </p>
+
+      <p>
+        <label>distance</label>
+        <input type = "number" placeholder="second number" class="secondNumber" id="secondNumber">
+      </p>
+
+      <p><button id="btnsend" class="btnsend">ENTER</button></p>
+      <div class="info" id="info"></div>
+
+      <script src="index.js"></script>
+
+</body>
+</html>
